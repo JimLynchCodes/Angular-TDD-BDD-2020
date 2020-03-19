@@ -22,14 +22,14 @@ module.exports = function (config) {
     },
     // list of files / patterns to load in the browser
     files: [
-      'app/js/**/*.ts',
-      'test/spec/**/*.ts'
+      'app/js/**/*.js',
+      'test/spec/**/*.js'
   ],
 
     reporters: ['progress', 'kjhtml', 'coverage-istanbul'],
     port: 9876,
     colors: true,
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
